@@ -212,7 +212,7 @@ const address = {
 // const post = {
 //   title: "My First Blog Post",
 //   body: `Hi everyone,
-    
+
 //     Ths is my first blog post.
 
 //     Hope you subscribe soon
@@ -260,3 +260,83 @@ const address = {
 //     return theArray;
 // }
 
+// const numbers = [1, 2, 3, 4];
+// function includes(array, searchElement) {
+//   let isIncluded = false;
+//   for (let item of array) {
+//     if (item === searchElement) {
+//       isIncluded = true;
+//       break;
+//     }
+//   }
+//   return isIncluded;
+// }
+
+// function includes(array, searchElement) {
+//   let included = false;
+//   array.forEach(function (element) {
+//     if (element === searchElement) {
+//       included = true;
+//     }
+//   });
+//   return included;
+// }
+// console.log(includes(numbers, 4));
+
+// const numbers = [1, 2, 3, 4, 1,7,9,5, 1];
+// const output = except(numbers, [1, 2]);
+// console.log(output);
+
+// function except(array, excluded) {
+//   let res = [...array];
+//   for (let i of excluded) {
+//     let alpha = res.filter((item) => item !== i);
+//     res = [...alpha];
+//   }
+//   return res;
+// }
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// const output = move(numbers, 0, 2);
+
+// console.log(output);
+
+// function move(array, index, offset) {
+//   if (index + offset < 0 || index + offset >= array.length) {
+//     console.error("Invalid offset.");
+//   } else {
+//     const arrays = [...array];
+//     let item = arrays.splice(index, 1)[0];
+//     // let jazz = index + offset;
+//     // //let newArray = [...array.splice(index + offset, 0, item)];
+//     // let test1 = [...array.splice(index, 1)];
+//     // let test2 = [...test1.splice(jazz, 0, item)];
+//     // return test2;
+//     arrays.splice(index + offset, 0, item);
+//     return arrays;
+//   }
+// }
+
+const numbers = [1, 2, 3, 4, 1];
+const count = countOccurrences(numbers, 1);
+console.log(count);
+
+// function countOccurrences(array, searchElement) {
+//   let count = 0;
+//   if (array.includes(searchElement)) {
+//     array.forEach(function (element) {
+//       if (element === searchElement) {
+//         count++;
+//       }
+//     });
+//   }
+//   return count;
+// }
+
+function countOccurrences(array, searchElement) {
+  return array.reduce((accumulator, currentValue) => {
+    const occurrence = currentValue === searchElement ? 1 : 0;
+    return accumulator + occurrence;
+  }, 0);
+}
