@@ -318,9 +318,9 @@ const address = {
 //   }
 // }
 
-const numbers = [1, 2, 3, 4, 1];
-const count = countOccurrences(numbers, 1);
-console.log(count);
+// const numbers = [1, 2, 3, 4, 1];
+// const count = countOccurrences(numbers, 1);
+// console.log(count);
 
 // function countOccurrences(array, searchElement) {
 //   let count = 0;
@@ -334,9 +334,40 @@ console.log(count);
 //   return count;
 // }
 
-function countOccurrences(array, searchElement) {
-  return array.reduce((accumulator, currentValue) => {
-    const occurrence = currentValue === searchElement ? 1 : 0;
-    return accumulator + occurrence;
-  }, 0);
-}
+// function countOccurrences(array, searchElement) {
+//   return array.reduce((accumulator, currentValue) => {
+//     const occurrence = currentValue === searchElement ? 1 : 0;
+//     return accumulator + occurrence;
+//   }, 0);
+// }
+
+// const numbers = [1, 2, 3, 4];
+
+// const max = getMax(numbers);
+
+// console.log(max);
+
+// function getMax(array) {
+//   if (array.length === 0) return undefined;
+//   return array.reduce((a, b) => (a > b ? a : b));
+// }
+
+// const movies = [
+//   { title: "a", year: 2018, rating: 4.5 },
+//   { title: "b", year: 2018, rating: 4.7 },
+//   { title: "c", year: 2018, rating: 3 },
+//   { title: "d", year: 2017, rating: 4.5 },
+// ];
+
+// const newMovies = [...movies];
+// function orderMovies(newMovie, year) {
+//   return newMovie
+//     .filter((item) => {
+//       item[year] === year;
+//     })
+//     .sort((thing1, thing2) => {
+//       thing1.title > thing2.title ? thing1 : thing2;
+//     });
+// }
+
+// console.log(orderMovies(movies, 2018));
