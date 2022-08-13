@@ -371,3 +371,49 @@ const address = {
 // }
 
 // console.log(orderMovies(movies, 2018));
+
+const people = [
+  { id: "1", name: "Yan", age: 35 },
+  { id: "2", name: "Christelle", age: 32 },
+  { id: "3", name: "Joshua", age: 8 },
+];
+
+let result;
+
+//count
+
+// result = people.reduce((acc, person) => acc + 1, 0);
+// console.log(result);
+
+// sum ages
+// result = people.reduce((acc, person) => {
+//   return acc + person.age;
+// }, 0);
+
+// console.log(result);
+
+// array of names (map)
+
+// result = people.reduce((acc, person) => {
+//   return [...acc, person.name];
+// }, []);
+// console.log(result);
+
+// convert id => person lookup (dict)
+
+// result = people.reduce((acc, person) => {
+//   return { ...acc, [person.id]: person };
+// }, {});
+
+// console.log(result);
+// max age
+
+// console.log(result);
+
+// find by name
+
+// result = people.reduce(() => {});
+
+// any over 18
+
+// count occurrences
