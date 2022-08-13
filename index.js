@@ -145,3 +145,118 @@ function Circle(radius) {
 }
 
 const another = new Circle(1);
+
+// here are different ways to iterate over an object
+// for (let key in another) console.log(key, another[key]);
+
+// for (let key of Object.keys(another)) console.log(key, another[key]);
+
+// for (let entry of Object.entries(another)) console.log(entry);
+
+// if ('draw' in another) console.log('draw exists');
+
+// Here are different ways to clone an object
+
+// const newCircle1 = Object.assign({}, another);
+// console.log(newCircle1);
+
+// const newCircle2 = { ...another };
+// console.log(newCircle2);
+
+//Date
+
+// const now = new Date();
+// const date1 = new Date(2018, 4, 11, 9);
+
+// console.log(date1);
+
+// console.log(now.toISOString());
+
+const address = {
+  number: "1641",
+  street: "Hebert",
+  city: "Laval",
+  zipCode: "H7V 3L6",
+};
+
+// function showAdress(adr) {
+//   let newAddress = "";
+//   for (let key in adr) {
+//     newAddress += ` ${adr[key]}`;
+//   }
+//   console.log(`You live at : ${newAddress}`);
+// }
+
+// showAdress(address);
+
+// factoryFunction
+// function factoryShowAdress(street, city, zipCode) {
+//     return {
+//     street,
+//     city,
+//     zipCode
+//   };
+// }
+
+// console.log(address)
+// // constructor function
+
+// function FactoryShowAddress(street, city, zipcode){
+//     this.street = street;
+//     this.city = city;
+//     this.zipCode = zipcode;
+// }
+
+// Blog Post Object
+
+// const post = {
+//   title: "My First Blog Post",
+//   body: `Hi everyone,
+    
+//     Ths is my first blog post.
+
+//     Hope you subscribe soon
+//     Regards
+//     `,
+//   author: "Yan babagbeto",
+//   views: 3,
+//   comments: [
+//     { author: "MC Sollar", body: "First comment" },
+//     { author: "Passi", body: "First comment" },
+//   ],
+//   isLive: true,
+// };
+
+// console.log(post);
+
+// function CreatePost(title, body, author, views, comments, isLive) {
+//   (this.title = title),
+//     (this.body = body),
+//     (this.author = author),
+//     (isLive = true);
+// }
+
+//arrays
+
+// const numbers = [3, 4];
+
+// numbers.push(5,6);
+
+// numbers.unshift(1,2);
+
+// console.log(numbers);
+
+// console.log(numbers.splice(2,1,'a','b'));
+
+// const numbers = arrayFromRange(-10, -4);
+
+// console.log(numbers);
+
+// function arrayFromRange(min, max){
+//     const theArray = [];
+//     for (let i = min; i<= max; i++ ){
+//         theArray.push(i);
+//     }
+//     return theArray;
+// }
+
