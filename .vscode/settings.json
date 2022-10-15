@@ -2,5 +2,12 @@
     "editor.guides.bracketPairs": true,
     "editor.guides.bracketPairsHorizontal": true,
     "editor.fontSize": 18,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "cSpell.words": [
+        "Adress",
+        "joac",
+        "Passi",
+        "Sollar",
+        "zipcode"
+    ]
 }

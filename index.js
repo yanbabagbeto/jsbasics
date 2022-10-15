@@ -137,14 +137,14 @@
 // }
 // }
 
-function Circle(radius) {
-  this.radius = radius;
-  this.draw = function () {
-    console.log("draw");
-  };
-}
+// function Circle(radius) {
+//   this.radius = radius;
+//   this.draw = function () {
+//     console.log("draw");
+//   };
+// }
 
-const another = new Circle(1);
+// const another = new Circle(1);
 
 // here are different ways to iterate over an object
 // for (let key in another) console.log(key, another[key]);
@@ -172,12 +172,12 @@ const another = new Circle(1);
 
 // console.log(now.toISOString());
 
-const address = {
-  number: "1641",
-  street: "Hebert",
-  city: "Laval",
-  zipCode: "H7V 3L6",
-};
+// const address = {
+//   number: "1641",
+//   street: "Hebert",
+//   city: "Laval",
+//   zipCode: "H7V 3L6",
+// };
 
 // function showAdress(adr) {
 //   let newAddress = "";
@@ -372,13 +372,13 @@ const address = {
 
 // console.log(orderMovies(movies, 2018));
 
-const people = [
-  { id: "1", name: "Yan", age: 35 },
-  { id: "2", name: "Christelle", age: 32 },
-  { id: "3", name: "Joshua", age: 8 },
-];
+// const people = [
+//   { id: "1", name: "Yan", age: 35 },
+//   { id: "2", name: "Christelle", age: 32 },
+//   { id: "3", name: "Joshua", age: 8 },
+// ];
 
-let result;
+// let result;
 
 //count
 
@@ -417,3 +417,66 @@ let result;
 // any over 18
 
 // count occurrences
+
+// const numbers = [1, 2, 3, 4];
+
+// const max = getMax(numbers);
+
+// console.log(max);
+
+// function getMax(array) {
+//   if (array.length === 0) return undefined;
+//   return array.reduce((a, b) => (a >= b ? a : b));
+// }
+
+//
+// console.log(
+//   movies
+//     .filter((movie) => movie.year === 2018 && movie.rating > 4)
+//     .sort((a, b) => {
+//       a.rating > b.rating;
+//     })
+//     .map((movie) => {
+//       movie.title;
+//     })
+// );
+
+// const titles = movies
+//   .filter((m) => m.year === 2018 && m.rating > 4)
+//   .sort((a, b) => {
+//     return a.rating - b.rating;
+//   })
+//   .reverse()
+//   .map((m) => {
+//     return m.title;
+//   });
+
+// console.log(titles);
+
+// sum([1,2,3,4]) => 10
+
+// function sum(...items) {
+//   if (items.length === 1 && Array.isArray(items[0])) {
+//     items = [...items[0]];
+//   }
+//   return items.reduce((acc, current) => acc + current + 0);
+// }
+
+// console.log(sum([1, 2, 3, 4]));
+
+// const Circle = function (radius) {};
+// this.radius = radius;
+
+let jo = {
+  a: 12,
+  b: 13,
+};
+
+let jac = {
+  c: 15,
+  b: 14,
+};
+
+let joac = { ...jo, ...jac };
+
+console.log(joac);
